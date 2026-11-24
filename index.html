@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMAN TECH</title>
+
+<style>
+body {
+  background: #080f20;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background: #101d35;
+  padding: 25px;
+}
+
+h1, h2 {
+  color: #00d9ff;
+}
+
+nav {
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 12px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00d9ff;
+}
+
+.card {
+  background: #172641;
+  margin: 30px auto;
+  padding: 30px;
+  width: 80%;
+  border: 1px solid #008cff;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  background: #00bfff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #008cff;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>AMAN TECH</h1>
+  <p>Future Technology</p>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="card" id="home">
+  <h2>Welcome to AMAN TECH</h2>
+  <p>Learn, Create and Innovate!</p>
+  <button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+    Explore Now
+  </button>
+</section>
+
+<section class="card" id="services">
+  <h2>Our Services</h2>
+
+  <h3>Programming</h3>
+  <p>Learn coding and build websites.</p>
+
+  <h3>Cyber Security</h3>
+  <p>Learn how to stay safe online.</p>
+
+  <h3>Video Editing</h3>
+  <p>Create amazing videos.</p>
+
+  <h3>Electronics</h3>
+  <p>Explore modern technology.</p>
+</section>
+
+<section class="card" id="contact">
+  <h2>Contact AMAN TECH</h2>
+  <p>Thank you for visiting!</p>
+</section>
+
+<footer>
+  <p>© 2026 AMAN TECH</p>
+</footer>
+
+</body>
+</html>
